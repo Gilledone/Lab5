@@ -71,15 +71,4 @@ class Employee {
       Console.WriteLine("My status is " + employmentstatus);
     }
 
-
-    public void RemoveEmployee() {
-      if (employmentstatus = active)
-      employmentstatus = active;
-      else{
-        
-      }
-    
-
     }
-    
-

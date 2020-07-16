@@ -3,7 +3,7 @@
 class MainClass {
   public static void Main (string[] args) {
 
-    Employee unknown = new Employee();//constructor with no parameters
+    Employee unknown = new Employee();
     unknown.Intro();
 
     Employee employee2 = new Employee("Robert", "Downey", 12321, 12, 1000, "active");
