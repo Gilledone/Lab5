@@ -12,15 +12,14 @@ class Employee {
     private string employeestatus;
     private double yearlysalary;
 
-
+/*
     //Properties
     public string Name{get; set;}//This is called auto implemented
     
     public int Age {get; set;}
-        public int age {
       get{ return age; }
       set{
-        if (value > 18)
+        if (value>=18)
           age = value;
         else
           age = 18;
@@ -28,7 +27,6 @@ class Employee {
     }
 
     public double YearlySalary {get; set;}    
-        public double yearlySalary {
       get{ return yearlysalary; }
       set{
         if (value < 1000)
@@ -38,38 +36,36 @@ class Employee {
       }
     }
 
-
+*/
     public Employee()//Constructor with no parameters
     {
-      Id="unknown";
-      Age=0;
-      Firstname="unknown";
-      Lastname="unknown";
+      id=0;
+      age=0;
+      firstname="unknown";
+      lastname="unknown";
 
-      Console.WriteLine("no parameters");
+      Console.WriteLine("New employee created");
     }
 
-    public Employee(string firstname, string lastname, int id, int age)//Constructor with parameters
+    public Employee(string employeename, string employeelast, int employeeid, int employeeage)//Constructor with parameters
     {
-      Firstname = firstname;
-      Lastname = lastname;
-      Id = id;
-      Age = age;      
-      Console.WriteLine("parameters");
+      firstname = employeename;
+      lastname = employeelast;
+      id = employeeid;
+      age = employeeage;
     }
 
     public void Intro()
     {
-      Console.WriteLine("My name is " + Firstname);
-      Console.WriteLine("Last name " + 0);
-      Console.WriteLine("My id is " + Id);
-      Console.WriteLine("My age is " + Age);
+      Console.WriteLine("My name is " + firstname);
+      Console.WriteLine("Last name " + lastname);
+      Console.WriteLine("My id is " + id);
+      Console.WriteLine("My age is " + age);
     }
-
+/*
     public void RemoveEmployee()
     {
       Console.WriteLine("Checking employment status");
-
+*/
     }
 
-}
