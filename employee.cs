@@ -4,7 +4,7 @@ class Employee {
     //Fields
     private string firstname;
     private string lastname;
-    private int id;
+    private string id;
     private int age;
     private string address;
     private string phonenumber;
@@ -47,12 +47,13 @@ class Employee {
       Console.WriteLine("New employee created");
     }
 
-    public Employee(string employeename, string employeelast, int employeeid, int employeeage)//Constructor with parameters
+    public Employee(string employeename, string employeelast, string employeeid, int employeeage, double employeesalary)//Constructor with parameters
     {
       firstname = employeename;
       lastname = employeelast;
       id = employeeid;
       age = employeeage;
+      yearlysalary = employeesalary;
     }
 
     public void Intro()
@@ -61,7 +62,10 @@ class Employee {
       Console.WriteLine("Last name " + lastname);
       Console.WriteLine("My id is " + id);
       Console.WriteLine("My age is " + age);
+      Console.WriteLine("My yearly salary is $" + yearlysalary);
     }
+
+
 /*
     public void RemoveEmployee()
     {
